@@ -1,0 +1,119 @@
+C+= A -B;
+
+LDA B
+NOT 
+ADD #1
+ADD A
+ADD C
+STR C
+
+
+If (N==0 )  S=2;
+else S= 1;
+
+LDA N
+JZ soma
+LDA #1
+JMP fim
+soma:
+LDA #2
+fim:
+STR S
+hlt
+
+
+
+
+x= 4 y=0
+WHILE (Y<X) Y++; X--;
+
+while:
+lda x
+not
+add #1
+add y
+jn adiciona
+jmp fim
+adiciona
+lda y
+add #01
+str y
+lda x
+add #-1
+str x
+jmp while
+fim 
+
+
+
+int a=0, b=5, c=7;
+for (int i =0; i < b, i++)
+{
+	A+=i;
+	if(a >= b)
+	{
+ 		c*=2 <=(c + c*c)
+	}
+}
+
+*variavel para guardar c(cX)*
+
+for:
+lda b
+not
+add #1
+add i
+jn forAdd
+
+fim.
+htl
+
+forAdd:
+lda a
+add i
+add a
+str a
+
+lda i
+add #1
+str i
+
+lda a
+not
+add #1
+add b
+jn if_vezes
+jz if_vezes
+
+jmp for
+
+if_vezes:
+lda c
+str cX
+lda c
+add cX
+add cX
+add c
+str c
+jmp for
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

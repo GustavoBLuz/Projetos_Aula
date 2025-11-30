@@ -1,0 +1,135 @@
+#include <stdio.h>
+
+
+
+int main()
+{
+int vetor[4]
+vetor[0] = 3
+vetor[1] = 1
+vetor[2] = 2
+vetor[3] = 4
+
+if(vetor[0] < vetor[1] && vetor[0] < vetor[2] && vetor[0] < vetor[3])
+{
+	printf("%d", vetor[0]);
+}
+if(vetor[1] < vetor[0] && vetor[1] < vetor[2] && vetor[1] < vetor[3])
+{
+	printf("%d", vetor[1]);
+}
+if(vetor[2] < vetor[0] && vetor[2] < vetor[1] && vetor[2] < vetor[3])
+{
+	printf("%d", vetor[2]);
+}
+if(vetor[3] < vetor[0] && vetor[3] < vetor[1] && vetor[3] < vetor[2])
+{
+	printf("%d", vetor[3]);
+}
+}
+
+
+int maior = 0, i = 0;
+int vetor[4]
+vetor[0] = 3
+vetor[1] = 1
+vetor[2] = 2
+vetor[3] = 4
+
+for(i=0;i<4;i++)
+{
+	if(vetor[i] > maior)
+	{
+		maior = v[i];
+	}
+}
+
+
+
+///////
+3+1+2+4 = 4+6 = 10/4 = 2.5
+
+#include <stdio>
+
+int main ()
+{
+int i=0,maiormedia =0;
+int v[4] = {3,1,2,4};
+float media;
+media = (v[0]+v[1]+v[2]+v[3])/4;
+
+while(i<4)
+{
+
+
+	if(v[i]>media)
+	{
+	maiormedia++;
+	}
+
+i++;
+}
+
+printf("Qnt de numeros maiores que a media: %d", maiormedia);
+
+return 0;
+
+}
+///////////
+#include <stdio>
+
+int main ()
+{
+int i=0,save;
+int v[4] = {3,1,2,4};
+
+while(i<2)
+{
+	if(i==0)
+	{
+		save=v[0];
+		v[0]=v[3];
+		v[3]=save;
+	}
+	if(i==1)
+	{
+		save=v[1];
+		v[1]=v[2];
+		v[2]=save;
+	}
+
+
+
+i++;
+}
+
+printf("inverso do vetor: %d %d %d %d", v[0],v[1],v[2],v[3]);
+
+return 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

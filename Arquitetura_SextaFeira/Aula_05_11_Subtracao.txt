@@ -1,0 +1,23 @@
+///Multiplicação em cleopatra
+Data
+cont: db #2
+resp: db #
+enddata
+
+inicio:
+ LDA cont
+ NOT
+ ADD #1
+ JN iteracao
+fim
+ HLT
+ iteracao:
+ LDA resp
+ ADD #4
+ STA resp
+ LDA cont
+ ADD #-1
+ STA cont
+ JMP inicio
+end code
+//////////////////////////////
